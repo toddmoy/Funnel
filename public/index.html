@@ -19,13 +19,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Funnel</title>
+    <style>
+      .loader {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loader svg {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+  
+    <div id="root">
+      <div class="loader">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 14 32 18" width="256" height="32" fill="#888" preserveAspectRatio="none" data-ember-extension="1">
+            <path opacity="0.8" transform="translate(6.2286 0)" d="M2 14 V18 H6 V14z">
+              <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline"/>
+            </path>
+            <path opacity="0.5" transform="translate(2.58564 0)" d="M0 14 V18 H8 V14z">
+              <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0.1s" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline"/>
+            </path>
+            <path opacity="0.25" transform="translate(0.110773 0)" d="M0 14 V18 H8 V14z">
+              <animateTransform attributeName="transform" type="translate" values="0 0; 24 0; 0 0" dur="2s" begin="0.2s" repeatCount="indefinite" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline"/>
+            </path>
+          </svg>
+        </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
