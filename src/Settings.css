@@ -1,0 +1,106 @@
+.settings .title {
+  margin-bottom: 2em;
+}
+
+.settings .subtitle {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+
+.settings .subtitle:not(:first-of-type) {
+  margin-top: 2em;
+}
+
+.settingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid #e5e5e5 1px;
+  padding: 10px 0;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.settingWrapper:hover {
+  padding-left: 5px;
+}
+
+.settingWrapper input[type="text"],
+.settingWrapper input[type="number"] {
+  font-size: 16px;
+  border: 0;
+  padding: 5px 0px;
+  border-radius: 2px;
+  transition: all 0.3s ease-out;
+  outline: none;
+  cursor: pointer;
+}
+
+.settingWrapper input[type="text"] {
+  flex: 1 1 auto;
+  margin-right: 20px;
+}
+
+.settingWrapper input[type="text"]:focus {
+  padding-left: 5px;
+}
+
+.settingWrapper input[type="number"]:focus {
+  padding-right: 5px;
+}
+
+.settingWrapper input[type="number"] {
+  text-align: right;
+  flex: 0 0 50px;
+}
+
+.settingWrapper button {
+  font-size: 16px;
+  background-color: #fff;
+  border: 0;
+  padding: 5px;
+  width: 30px;
+  cursor: pointer;
+  color: #D0021B;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 10px;
+  right: -40px;
+}
+
+.settingWrapper button:focus {
+  outline: none;
+  opacity: 1.0;
+  transform: scale(1.5, 1.5)
+}
+
+.settingWrapper:hover button {
+  opacity: 1.0;
+}
+
+.settingWrapper button:hover {
+  transform: scale(1.5, 1.5)
+}
+
+.settingWrapper input[type="color"] {
+  width: 25px;
+}
+
+.btn-add {
+  border: 0;
+  border-top: solid #e5e5e5 1px;
+  font-size: 16px;
+  padding: 20px 0px;
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  color: #333;
+  padding-left: 5px;
+}

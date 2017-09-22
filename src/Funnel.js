@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Step from './Step'
+import './Funnel.css'
 
 class Funnel extends Component {
   render() {

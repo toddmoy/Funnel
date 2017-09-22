@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 import DataForm from './DataForm'
 import ColorPicker from './ColorPicker'
+import './Settings.css'
 
 class Settings extends Component {
   render() {

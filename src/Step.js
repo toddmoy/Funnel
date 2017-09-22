@@ -1,6 +1,7 @@
 // A step contains the container div, a bar whose height changes, and a label. 
 
 import React, { Component } from 'react'
+import './Step.css'
 
 class Step extends Component {
   render() {
